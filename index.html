@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <h1 id="title">Apple Survey Form</h1>
+    <p id="description">Helps us make Apple the best electronic company.</p>
+  <section>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input id="name" type="text" placeholder="Enter Your Name" required></label>
+        <label id="email-label">Email <input id="email" type="email" placeholder="Enter Your Email" required></label>
+        <label id="number-label">Age (optional) <input id="number" type="number" min="13" max="120" placeholder="Enter Your Age"></label>
+      </fieldset>
+      <fieldset>
+        <label>
+          What Apple device do you have?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">iPhone</option>
+            <option value="2">iPad</option>
+            <option value="3">Macbook</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>How do you identify?</legend>
+        <label><input type="radio" name="gender" value="m"/> Male</label>
+        <label><input type="radio" name="gender" value="f"/> Female</label>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like improved</legend>
+        <label><input type="checkbox" value="1" /> Software</label>
+        <label><input type="checkbox" value="2" /> Hardware</label>
+        <label><input type="checkbox" value="3" /> Customer Serivce</label>
+        <label><input type="checkbox" value="4" /> Other</label>
+      </fieldset>
+      <fieldset>
+      <label id="cc">Any comments or concerns?<label>
+        <textarea id="c-and-c" rows="3" cols="30" placeholder="Comments or Concerns."></textarea>
+      </fieldset>
+    <label><input id="submit" type="submit" value="Submit" />
+    </form>
+  </section>
+</body>
+</html>
